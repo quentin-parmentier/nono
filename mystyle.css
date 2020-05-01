@@ -1,0 +1,278 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #706f6f;
+  font-family: "Roboto";
+}
+
+header {
+  width: 100%;
+  background-color: #6f7375;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  text-align: center;
+  color: #2f575d;
+}
+
+h1 {
+  color: #FFF;
+  padding-top: 10px;
+  margin: 0px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #2f575d;
+}
+
+#level {
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.case {
+
+  width: 60px;
+  height: 60px;
+  border: 2px solid #706f6f;
+
+}
+
+canvas {
+	margin-top: 20px;
+}
+
+.etoile {
+
+  background-image: url("img/star.png");
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+
+}
+
+.mur {
+
+  background-image: url("img/box.png");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.start {
+
+  background-color: grey;
+}
+
+.end {
+
+  background-image: url("img/flag.png");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.action {
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+.h {
+  background-image: url("img/haut.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.b {
+  background-image: url("img/bas.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.g {
+  background-image: url("img/gauche.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.d {
+  background-image: url("img/droite.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#actions div {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* Grid */
+#container {
+  position: relative;
+}
+
+/* Character on the grid */
+#robot {
+  position: absolute;
+  top: 386px;
+  left: 2px;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+#robot img {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+
+
+/*** External border correction ***/
+.left_border { border-left: 4px solid; }
+.right_border { border-right: 4px solid; }
+.top_border { border-top: 4px solid; }
+.bottom_border { border-bottom: 4px solid; }
+
+
+
+/*** Character selection ***/
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: table;
+  width: 100%;
+}
+
+.container .character {
+  display: table-cell;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container .character a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container img {
+    max-width: 150px;
+}
+
+.modal {
+  color: #161616;
+}
+
+#message {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+#message a {
+  display: inline-block;
+  color: white;
+  background-color: #54A0AB;
+  border: 10px solid #54A0AB;
+  text-decoration: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  transition: .2s ease;
+}
+
+#message a:hover {
+  color: #fff;
+  background-color: #54A0AB;
+}
+
+
+
+#plateau{
+
+  float: left;
+  margin-right: 15px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+.actionchoix{
+
+  margin-top: 10px;
+
+}
+
+.myButton {
+  background-color:#59b5bd;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:12px 39px;
+  text-decoration:none;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.myButton:hover {
+  background-color:#41848a;
+}
+
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text{
+
+  color: #2f575d;
+  font-weight: 500;
+
+}

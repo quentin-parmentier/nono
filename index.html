@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800" rel="stylesheet">
+	<title>Nono</title>
+
+</head>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="text" id="textmodal">
+    	
+    	<h2>Les règles du jeu</h2>
+		<p>Dans "La vie de nono", tu dois mener ton robot à travers un labyrinthe pour qu'il évite les obstacles et ramasse le plus de bonus possible, jusqu'à ce qu'il atteigne la sortie.</p>
+
+		<p>Pour le guider à travers ce labyrinthe, tu disposes de plusieurs actions disponibles sous forme de cartes :</p>
+
+		<p>Aller à gauche</p>
+		<p>Aller à droite</p>
+		<p>Aller en haut</p>
+		<p>Aller en bas</p>
+		<p>Tu dois placer ces actions dans les cases du labyrinthe, par un glisser-déposer, pour construire le chemin que va suivre ton robot.</p>
+		<p>Disséminer aux quatre coins du labyrinthe, se trouvent des bonus sous forme d'étoiles, essayes d'en ramasser le maximum !</p>
+
+
+    </p>
+  </div>
+
+</div>
+
+<body>
+
+	<header>
+
+		<h1 id="titre"> La vie de nono <p id="level"> </p>
+		</h1> <button class="myButton" id="go"> GO ! </button> <button class="myButton" id="rego"> Retry ! </button> <button class="myButton" id="nextlevel">Passer au niveau d'après</button>
+
+	</header>
+
+	<div id="container">
+
+		<div id="robot" class="robot"><img src="img/rob.png"></div>
+		<div id="plateau" class="text"></div>
+		<div id="gainitem" class="text"> </div>
+		<div id="commence" class="text"></div>
+
+	</div>
+
+	<div id="actions" class="text">  </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="myscript.js"></script>
+
+</body>
+
+</html>
